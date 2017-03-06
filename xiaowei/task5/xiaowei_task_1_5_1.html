@@ -5,77 +5,61 @@
     <meta charset="UTF-8">
     <title>任务一：零基础HTML编码</title>
     <style>
+
 .clear {
     clear: both;
 }
-
-
-
  body {
     background-color: #dedede;
     width: 100%;
     font-size: 12px;
     min-width:600px;
-
 }
 .header {
     background-color: #333333;
     height: 60px;
     width: 100%;
-
 }
-
 .header img {
     width:117px;
     margin-left: 40px;
     margin-top: 10px;
 }
-
 .header ul {
     float:right;
     font-size: 11px;
     margin-right:20px;
-
 }
 .header ul li {
     float:left;
     margin-left: 10px;
     width:85px;
-
 }
 .header ul li a {
     color: white;
     text-decoration: none;
 }
-
 .grayfont {
     color:gray;
 }
-#gray a {
+.header ul li:last-child a {
     color:gray;
 }
-
 .box {
     margin-right: 396px;
-
-
-
 }
-
 .main1 {
     background-color: #ffffff;
     margin:20px;
     border: 2px outset #cdcdcd;
     min-width:342px;
 }
-
 .main2 {
     background-color: #ffffff;
     margin:20px;
     border: 2px outset #cdcdcd;
     min-width:342px;
 }
-
 .main3 {
     background-color: #ffffff;
     margin:20px;
@@ -83,12 +67,10 @@
     padding: 40px 20px;
     min-width:162px;
 }
-
 .blogpic{
     width:300px;
     height:242px;
 }
-
 .pics {
     display: inline-block;
     border: 1px solid gray;
@@ -97,34 +79,23 @@
     height:102px;
     padding: 11px;
     margin:10px;
-
-
     }
 .pics span{
     display: block;
-
-
 }
 .pics img {
     width:100px;
     height:81px;
-
 }
-
 .main4 {
     background-color: #ffffff;
     margin:20px;
     border: 2px outset #cdcdcd;
     min-width:300px;
-
 }
-
 .main4 tr td {
     border:1px solid #cccccc;
-
 }
-
-
 .main5 {
     float: right;
     width: 322px;
@@ -135,11 +106,14 @@
     top:88px;
     right:20px;
 }
-
 .r {
     text-align: right;
-    vertical-align: top;
+    font-size:10px;
+    
+    
 }
+
+
 
 #submit {
     background-color:#3355d0;  
@@ -150,7 +124,6 @@
     margin:10px auto;
     color:white;
 }
-
 .footer {
     background-color: #333333;
     height: 60px;
@@ -160,7 +133,6 @@
     line-height: 60px;
     font-size: 11px;   
 }
-
 article {
     padding: 40px 20px;
 }
@@ -176,7 +148,7 @@ article {
             <li><a href="">导航链接一</a></li>
             <li><a href="">导航链接二</a></li>
             <li><a href="">导航链接三</a></li>
-            <li id="gray"><a href="">导航链接四</a></li>
+            <li><a href="">导航链接四</a></li>
         </ul>
     </div>
     <div class="clear"></div>
@@ -308,8 +280,8 @@ article {
         <form>
             <table>
                 <tr>
-                    <td width="350" class="r">请输入邮箱地址：</td>
-                    <td width="700"><input type="email" placeholder="这是一个文本输入框"></td>
+                    <td class="r"><span>请输入邮箱地址：</span></td>
+                    <td><input type="email" placeholder="这是一个文本输入框"></td>
                 </tr>
                 </tr>
                 <tr>
@@ -317,11 +289,11 @@ article {
                     <td><span class="grayfont">邮箱地址请按要求格式输入</span></td>
                 </tr>
                 <tr>
-                    <td class="r">请输入密码：</td>
+                    <td class="r"><span>请输入密码：</span></td>
                     <td><input type="text" placeholder="*********"> </td>
                 </tr>
                 <tr>
-                    <td class="r">请重复输入密码：</td>
+                    <td class="r"><span>请重复输入密码：</span></td>
                     <td><input type="text" placeholder="*********"></td>
                 </tr>
                 <tr>
@@ -329,10 +301,10 @@ article {
                     <td><span class="grayfont">密码请为6-16位英文数字</span></td>
                 </tr>
                 <tr>
-                    <td class="r"> 性别：</td>
-                    <td><input type="radio" checked="checked" name="sex" value="male">男<input type="radio" name="sex" value="female">女</td>
+                    <td class="r"> <span>性别：</span></td>
+                    <td><input type="radio" checked="checked" name="sex" value="male"><span>男</span><input type="radio" name="sex" value="female">女</td>
                 <tr>
-                    <td class="r">城市：</td>
+                    <td class="r"><span>城市：</span></td>
                     <td>
                         <select name="city">
                             <option value="Xi'an">西安</option>
@@ -343,12 +315,11 @@ article {
                     </td>
                 </tr>
                 <tr>
-                    <td class="r">爱好：</td>
-                    <td><input type="checkbox" name="hobby" value="sports" checked="checked" />运动 <input type="checkbox"
-                                                                                                         name="hobby" value="art" />艺术 <input type="checkbox" name="hobby" value="science" />科学</td>
+                    <td class="r"><span>爱好：</span></td>
+                    <td><input type="checkbox" name="hobby" value="sports" checked="checked" /><span>运动</span> <input type="checkbox" name="hobby" value="art" /><span>艺术</span> <input type="checkbox" name="hobby" value="science" /><span>科学</span></td>
                 </tr>
                 <tr>
-                    <td class="r"> 个人描述：</td>
+                    <td class="r"> <span>个人描述：</span></td>
                     <td><textarea name="comments" rows="atuo" cols="atuo">这是一个多行输入框，输入您的个人描述</textarea></td>
                 </tr>
             </table>
