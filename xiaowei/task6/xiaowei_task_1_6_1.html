@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        /**{*/
-            /*padding:0px;*/
-            /*margin:0px;*/
-        /*}*/
         .clear{
             clear:both;
         }
@@ -224,17 +220,34 @@
             color: #11456b;
         }
         .qita {
-
+            padding-top: 30px;
             font-family: "宋体";
             font-size: 12px;
             line-height: 16px;
             color: #767777;
+            text-align: justify;  
+            
         }
-        .dang{
-
+        .qita:first-letter {
             font-family: "微软雅黑";
             font-size: 70px;
             color: #f5e327;
+            float: left;
+            line-height: 70px;
+        }
+
+        /*伪元素*/
+        /*.qita:before {
+            content: "当";
+            font-family: "微软雅黑";
+            font-size: 70px;
+            color: #f5e327;
+            float: left;
+            line-height: 70px;
+        }*/
+        
+        .qita img {
+            float: right; 
         }
 
 
@@ -359,11 +372,7 @@
             line-height: 16px;
             font-style: italic;
         }
-        .hellowords span{
-            font-family: "黑体";
-            font-size: 72px;
-            color: #d45d5c;
-        }
+        
 
 
         .footer{
@@ -377,6 +386,24 @@
             font-family: "黑体";
             font-size: 12px;
             color: #d45d5c;
+        }
+        .hellowords:before {
+            content: open-quote;
+            font-size: 72px;
+            color: #d45d5c;
+            font-style: "黑体";
+            position: relative;
+            left: -40px;
+            top: 20px;
+        }
+        .hellowords:after {
+            content: close-quote;
+            font-size: 72px;
+            color: #d45d5c;
+            font-style: "黑体";
+            position: relative;
+            right:-120px; 
+            bottom:-40px;
         }
 
     </style>
@@ -442,7 +469,8 @@
                 <span class="qdjsly">前端技术领域</span>
             </div>
             <div class="ldown">
-                <span class="dang">当</span><span class="qita">我应承了为老西安写一本书后，老实讲，我是有些犯难了，我并不是土生土长的西安人，虽然在这里生活了二十七年，对过去的事情却仍难以全面了解。以别人的经验写老城，如北京、上海、南京、天津、广州，要凭了一大堆业已发黄的照片，但有关旧时西安的照片少得可怜，费尽了心机在数个档案馆里翻腾，又往一些老古董收藏家家中搜寻，得到的尽是一些“ 西安事变”、“ 解放西安”的内容，而这些内容国人皆知，哪里又用得着我写呢？　　老西安没照片？这让多少人感到疑惑不解，其实，老西安就是少有照片资料。没有照片的老西安正是老西安。西安曾经叫做长安，这是用不着解说的，也用不着多说中国有十三个封建王朝在此建都，尤其汉唐，是国家的政治、经济、军事、文化中心，其城市的恢宏与繁华辉煌于全世界。可宋元之后，国都东迁北移，如人走茶凉，西安遂渐渐衰败。到了二十世纪二三十年代，已经荒废沦落到规模如现今陕西的一个普通县城的大小。在仅有唐城十分之一的那一圈明朝的城墙里，街是土道，铺为平屋，没了城门的空门洞外就是庄稼地、胡基壕、蒿丘和涝地，夜里有猫头鹰飞到钟楼上叫啸，肯定有人家死了老的少的，要在门首用白布草席搭了灵棚哭丧，而黎明出城去报丧的就常见到狼拖着扫帚长尾在田埂上游走。</span>
+                <div class="qita">当我应承了为老西安写一本书后，老实讲，我是有些犯难了，我并不是土生土长的西安人，虽然在这里生活了二十七年，对过去的事情却仍难以全面了解。以别人的经验写老城，如北京、上海、南京、天津、广州，要凭了一大堆业已发黄的照片，但有关旧时西安的照片少得可怜，费尽了心机在数个档案馆里翻腾，又往一些老古董收藏家家中搜寻，得到的尽是一些“ 西安事变”、“ 解放西安”的内容，而这些内容国人皆知，哪里又用得着我写呢？<img src="https://img3.doubanio.com/view/photo/raw/public/p1903467632.jpg" alt="" width="150">　　老西安没照片？这让多少人感到疑惑不解，其实，老西安就是少有照片资料。没有照片的老西安正是老西安。西安曾经叫做长安，这是用不着解说的，也用不着多说中国有十三个封建王朝在此建都，尤其汉唐，是国家的政治、经济、军事、文化中心，其城市的恢宏与繁华辉煌于全世界。可宋元之后，国都东迁北移，如人走茶凉，西安遂渐渐衰败。到了二十世纪二三十年代，已经荒废沦落到规模如现今陕西的一个普通县城的大小。在仅有唐城十分之一的那一圈明朝的城墙里，街是土道，铺为平屋，没了城门的空门洞外就是庄稼地、胡基壕、蒿丘和涝地，夜里有猫头鹰飞到钟楼上叫啸，肯定有人家死了老的少的，要在门首用白布草席搭了灵棚哭丧，而黎明出城去报丧的就常见到狼拖着扫帚长尾在田埂上游走。
+                </div>
             </div>
         </div>
         <div class="rmain">
@@ -468,7 +496,7 @@
                         <span class="helloworld">hello world hello world<br/>hello world</span>
                     </div>
                 </div>
-                <div class="hellowords"><span>“</span>hello world hello world hello world hello world hello world hello world hello world hello world<span>”</span></div>
+                <div class="hellowords">hello  world hello world hello world hello world hello world </div>
             </div>
         </div>
     </div>
