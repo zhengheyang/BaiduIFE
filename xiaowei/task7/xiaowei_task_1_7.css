@@ -1,0 +1,579 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+/*header开始*/
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    min-width: 800px;
+    height: 57px;
+    background-color: #ffffff;
+}
+.logo {
+    float: left;
+    margin-left: 59px;
+    line-height: 57px;
+    font-size: 21px;
+}
+.logo img {
+    margin-right: 10px;
+}
+.header-nav {
+    float: right;
+    text-align: center;
+}
+.header-nav ul li {
+    float: left;
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 54px;
+    color: #787b83;
+    margin-right: 46px;
+}
+.header-nav ul li:last-child {
+    color: #e84f51;
+    margin-right: 67px;
+}
+.header-nav ul li:hover {
+    color: #e84f51;
+    border-bottom: 3px solid #e84f51;
+}
+/*header结束*/
+
+.wrap {
+    width: 1280px;
+    height: 690px;
+    background-image: url(https://img3.doubanio.com/view/photo/raw/public/p1571265784.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    padding-top: 229px;
+    padding-left: 117px;
+}
+.wrap-title {
+    font-size: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+.wrap-content {
+    font-size: 22px;
+    line-height: 34px;
+    color: #ffffff;
+    margin-bottom: 67px;
+}
+
+.wrap-btn input {
+    width: 330px;
+    height: 63px;
+    font-size: 29px;
+    line-height: 63px;
+    color: #ffffff;
+    background-color: #e84f51;
+    border: none;
+}
+/*wrap结束*/
+
+.nav {
+    width: 1280px;
+    height: 250px;
+}
+.nav-target,.nav-flag,.nav-idea,.nav-train {
+    float: left;
+    text-align: center;
+}
+.nav-pic {
+    margin-top: 46px;
+    margin-bottom: 45px;
+}
+.nav-title {
+    font-size: 14px;
+    line-height: 18px;
+}
+.target-border {
+    width: 324px;
+    border-right: 1px solid #ababab;
+    height: 52px;
+}
+.flag-border {
+    width: 333px;
+    border-left: 1px solid #bababa;
+    border-right: 1px solid #bababa;
+    height: 52px;
+}
+.idea-border {
+    width: 318px;
+    border-left: 1px solid #ababab;
+    border-right: 1px solid #ababab;
+    height: 52px;
+}
+.train-border {
+    width: 303px;
+    border-left: 1px solid #bababa;
+    height: 52px;
+}
+
+/*nav结束*/
+
+.ad {
+    width: 1280px;
+    height: 360px;
+    background-color: #ededed;
+    text-align: center;
+    padding-top: 90px;
+}
+.ad-title {
+    font-size: 52px;
+    line-height: 52px;
+    color: #a2a2a2;
+    margin-top: 50px;
+}
+/*ad结束*/
+
+.location {
+    width: 1280px;
+    height: 340px;
+    text-align: center;
+    background-image: url(https://img3.doubanio.com/view/photo/raw/public/p1571265784.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    padding-top: 53px;
+}
+.lo-title {
+    font-size: 20px;
+    line-height: 20px;
+    color: #ffffff;
+}
+.lo-hr {
+    width: 30px;
+    height: 12px;
+    margin: auto;
+    border-bottom: 1px solid #ffffff;
+}
+.lo-content {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 21px;
+    margin-bottom: 52px;
+    color: #ffffff;
+}
+.lo-form select,.lo-form input {
+    width: 236px;
+    height: 35px;
+    background-color: #ffffff;
+    margin: 0 14px 0 14px;
+    outline-color: #e84f51;
+}
+.lo-form option {
+    background-color: #e3e3e5;
+    color: #767678;
+}
+.lo-form input {
+    color: #ffffff;
+    background-color: #e84f51;
+    border: none;
+    font-size: 14px;
+    letter-spacing: 25px;
+}
+/*location结束*/
+
+.city-section {
+    width: 1280px;
+    height: 605px;
+    background-color: #f8f8f8;
+    padding-top: 100px;
+    padding-left: 148px;
+
+}
+.section {
+    float: left;
+    text-align: center;
+}
+
+.pic {
+    width: 217px;
+    height: 335px;
+    border-top: 11px solid #ffffff;
+    border-bottom: 11px solid #ffffff;
+    border-left: 6px solid #ffffff;
+    border-right: 6px solid #ffffff;
+    background-image: url(https://img3.doubanio.com/view/photo/raw/public/p1571267564.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.pic-rb {
+    background-position: right bottom;
+}
+.pic-lt {
+    background-position: left top;
+}
+.pic-rt {
+    background-position: right center;
+}
+.pic-margin {
+    margin-right: 36px;
+}
+.pic-border {
+    width: 219px;
+    height: 337px;
+    border: 1px solid #dadada;
+    border-bottom: none;
+}
+.pic-border-all {
+    width: 219px;
+    height: 337px;
+    border: 1px solid #dadada;
+}
+.city {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 14px;
+}
+.city-content {
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #999999;
+}
+.city-shanghai {
+    font-size: 21px;
+    line-height: 21px;
+    letter-spacing: 30px;
+}
+/*section结束*/
+.active {
+    height: 566px;
+    width: 1280px;
+}
+.active-cover {
+    float: left;
+    width: 850px;
+    height: 566px;
+    text-align: center;
+    background-image: url(https://img3.doubanio.com/view/photo/photo/public/p2425887433.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.active-content {
+    float: left;
+    width: 430px;
+    height: 566px;
+    text-align: center;
+}
+.active-title {
+    color: #ffffff;
+    font-size: 46px;
+    line-height: 46px;
+    margin-top: 133px;
+}
+.title-eng {
+    color: #ffffff;
+    font-size: 120px;
+    line-height: 120px;
+    margin-top: 11px;
+    margin-bottom: 38px;
+}
+.title-beijing {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 22px;
+}
+.title-date {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 17px;
+}
+.content-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 165px;
+    margin-bottom: 21px;
+}
+.content-title:after {
+    content: "01";
+    color: #e84f51;
+    font-size: 20px;
+    line-height: 20px;
+}
+.content-content {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 70px 0 70px;
+    color: #acacac;
+
+}
+.content-more {
+    width: 105px;
+    height: 33px;
+    border: 1px solid #e84f51;
+    color: #e84f51;
+    font-size: 12px;
+    margin: 50px auto 25px auto;
+}
+.triangle {
+    width: 46px;
+    height: 30px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 23px solid transparent;
+    border-right: 23px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+/*active结束*/
+
+.more {
+    width: 1280px;
+    height: 520px;
+}
+.more-section {
+    text-align: center;
+    width: 425px;
+    height: 520px;
+    float: left;
+}
+.more-img {
+    width: 420px;
+    background-image: url(https://img1.doubanio.com/view/photo/photo/public/p2425947669.webp);
+    position: relative;
+}
+.color-white {
+    background-color: #e84f51;
+    color: #ffffff;
+}
+.more-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 174px 0 11px 0;
+}
+.more-content {
+    font-size: 18px;
+    line-height: 18px;
+}
+.more-hr {
+    width: 30px;
+    border: 1px solid #ffffff;
+    margin: 25px auto;
+}
+.more-more {
+    width: 169px;
+    height: 43px;
+    margin: auto;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    line-height: 43px;
+}
+.color-red {
+    color: #e84f51;
+    border: 1px solid #e84f51;
+}
+.more-triangle {
+    width: 46px;
+    height: 30px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 23px solid #ffffff;
+    border-right: 23px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+/*more结束*/
+
+.member {
+    width: 1280px;
+    height: 750px;
+    text-align: center;
+}
+.member-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 120px 0 11px 0;
+}
+.member-hr {
+    width: 30px;
+    border: 1px solid #e84f51;
+    margin: 9px auto 12px auto;
+}
+.member-content {
+    font-size: 18px;
+    line-height: 18px;
+    color: #ababab;
+    width: 420px;
+    margin: auto;
+}
+.member-box {
+    margin-top: 103px;
+    width: 1280px;
+    height: 448px;
+
+}
+.box-term {
+    float: left;
+    width: 288px;
+    margin-left: 138px;
+}
+.term-title {
+    text-align: left;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 16px;
+}
+.term-content {
+    text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    color: #ababab;
+}
+.term-more {
+    text-align: right;
+    font-size: 6px;
+    line-height: 6px;
+    color: #ababab;
+}
+
+
+
+
+
+
+.box-form {
+    float: left;
+    width: 640px;
+    margin-left: 75px;
+}
+.input {
+    float: left;
+    width: 310px;
+    height: 40px;
+    background-color: #ededef;
+    margin-bottom: 14px;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #717179;
+}
+.input input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.input-name,.input-phone {
+    margin-right: 20px;
+}
+.input-comment {
+    width: 640px;
+    height: 120px;
+    margin-bottom: 14px;
+    background-color: #ededef;
+}
+.input-comment textarea {
+    width: 640px;
+    height: 120px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+}
+.input-submit {
+    height: 40px;
+    width: 640px;
+    line-height: 40px;
+    background-color: #ededef;
+}
+.input-submit input {
+    height: 40px;
+    width: 640px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+/*memeber结束*/
+
+
+.contact {
+    width: 100%;
+    height: 358px;
+    background-color: #33363f;
+    padding-top: 92px;
+    text-align: center;
+    color: #ffffff;
+}
+.contact-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+.contact-content {
+    width: 470px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 18px;
+}
+.contact-mail {
+    width: 510px;
+    height: 40px;
+    margin: 27px auto 38px auto;
+    background-color: #ffffff;
+}
+.contact-mail input:first-child {
+    outline: none;
+    border: none;
+    color: #aaaaaa;
+    width: 430px;
+    height: 40px;
+    padding-left: 10px;
+}
+.contact-mail input:last-child {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #717179;
+    width: 80px;
+    height: 40px;
+}
+.contact-sns img {
+    margin-right: 28px;
+}
+/*contact结束*/
+
+
+.footer {
+    width: 100%;
+    height: 57px;
+    background-color: #30303a;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 57px;
+    padding-left: 100px;
+}
+/*footer结束*/
