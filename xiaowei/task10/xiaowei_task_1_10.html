@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        .flex-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .flex-item {
+            width: 150px;
+            border: 1px solid #f00;
+            margin-bottom: 20px;
+        }
+        .box1 {
+            height: 120px;
+        }
+        .box2 {
+            height: 100px;
+        }
+        .box3 {
+            height: 40px;
+        }
+        .box4 {
+            height: 200px;
+            border: 1px solid blue;
+        }
+        @media screen and (max-width:640px) {
+            .flex-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: flex-start;
+            align-content: flex-start;
+            padding: 20px;
+        }
+        .box4 {
+            order: -1;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item box1">1</div>
+        <div class="flex-item box2">2</div>
+        <div class="flex-item box3">3</div>
+        <div class="flex-item box4">4</div>
+    </div>
+    
+</body>
+</html>
