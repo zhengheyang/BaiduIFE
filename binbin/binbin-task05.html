@@ -33,6 +33,14 @@
         var numArr = [];
         var isOk = true;
 
+        function checkArr() {
+            var length = numArr.length;
+            if (length > 60) {
+                alert('元素数量最多为60');
+                numArr.pop();
+            }
+        }
+
         function checkNum() {
             var num = document.getElementById('usrInput').value;
             if (num < 10 || num > 100) {
@@ -59,6 +67,7 @@
             if (isOk) {
                 var num = document.getElementById('usrInput').value;
                 numArr.unshift(num);
+                checkArr();
                 document.getElementById('numArr').innerHTML = '';
                 showNumArr();
             }
@@ -69,6 +78,7 @@
             if (isOk) {
                 var num = document.getElementById('usrInput').value;
                 numArr.push(num);
+                checkArr();
                 document.getElementById('numArr').innerHTML = '';
                 showNumArr();
             }
