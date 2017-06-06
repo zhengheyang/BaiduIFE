@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #numArr span {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f00;
+            color: #fff;
+            width: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="usrInput" type="number">
+        <button onclick="leftIn()" type="button" name="button">左侧入</button>
+        <button onclick="rightIn()" type="button" name="button">右侧入</button>
+        <button onclick="leftOut()" type="button" name="button">左侧出</button>
+        <button onclick="rightOut()" type="button" name="button">右侧出</button>
+        <button onclick="sortArr()">排序</button>
+    </div>
+    <div id="numArr"></div>
+
+    <script>
+        var numArr = [];
+        var isOk = true;
+
+        function checkNum() {
+            var num = document.getElementById('usrInput').value;
+            if (num < 10 || num > 100) {
+                alert('请输入10-100之间的数字');
+                isOk = false;
+            } else {
+                isOk = true;
+            }
+        }
+
+        function showNumArr() {
+            for (var i = 0; i < numArr.length; i++) {
+                var span = document.createElement("span");
+                span.style.height = numArr[i] + 'px';
+                span.onclick = function() {
+                    this.parentNode.removeChild(this);
+                }
+                document.getElementById('numArr').appendChild(span);
+            }
+        }
+
+        function leftIn() {
+            checkNum();
+            if (isOk) {
+                var num = document.getElementById('usrInput').value;
+                numArr.unshift(num);
+                document.getElementById('numArr').innerHTML = '';
+                showNumArr();
+            }
+        }
+
+        function rightIn() {
+            checkNum();
+            if (isOk) {
+                var num = document.getElementById('usrInput').value;
+                numArr.push(num);
+                document.getElementById('numArr').innerHTML = '';
+                showNumArr();
+            }
+        }
+
+        function leftOut() {
+            var a = numArr.shift();
+            alert(a);
+            document.getElementById('numArr').innerHTML = '';
+            showNumArr();
+        }
+
+        function rightOut() {
+            var a = numArr.pop();
+            alert(a);
+            document.getElementById('numArr').innerHTML = '';
+            showNumArr();
+        }
+
+        function sortArr() {
+            for (var i = 0; i < numArr.length - 1; i++) {
+                for (var j = 0; j < numArr.length - 1 - i; j++) {
+                    if (numArr[j] > numArr[j + 1]) {
+                        var temp = numArr[j + 1];
+                        numArr[j + 1] = numArr[j];
+                        numArr[j] = temp;
+                    }
+                }
+            }
+            // numArr.sort(function(a, b) {
+            //     return a - b;
+            // })
+            document.getElementById('numArr').innerHTML = '';
+            showNumArr();
+        }
+    </script>
+</body>
+
+</html>

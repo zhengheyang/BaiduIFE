@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #numArr span {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f00;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input id="usrInput" type="number">
+        <button onclick="leftIn()" type="button" name="button">左侧入</button>
+        <button onclick="rightIn()" type="button" name="button">右侧入</button>
+        <button onclick="leftOut()" type="button" name="button">左侧出</button>
+        <button onclick="rightOut()" type="button" name="button">右侧出</button>
+    </div>
+    <div id="numArr"></div>
+
+    <script>
+        var numArr = [];
+
+        function showNumArr() {
+            for (var i = 0; i < numArr.length; i++) {
+                var span = document.createElement("span");
+                span.onclick = function() {
+                    this.parentNode.removeChild(this);
+                }
+                span.innerHTML = numArr[i];
+                document.getElementById('numArr').appendChild(span);
+            }
+        }
+
+        function leftIn() {
+            var num = document.getElementById('usrInput').value;
+            numArr.unshift(num);
+            document.getElementById('numArr').innerHTML = '';
+            showNumArr();
+        }
+
+        function rightIn() {
+            var num = document.getElementById('usrInput').value;
+            numArr.push(num);
+            document.getElementById('numArr').innerHTML = '';
+            showNumArr();
+        }
+
+        function leftOut() {
+            var a = numArr.shift();
+            alert(a);
+            document.getElementById('numArr').innerHTML = '';
+            showNumArr();
+        }
+
+        function rightOut() {
+            var a = numArr.pop();
+            alert(a);
+            document.getElementById('numArr').innerHTML = '';
+            showNumArr();
+        }
+    </script>
+</body>
+
+</html>
